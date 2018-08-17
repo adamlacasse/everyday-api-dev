@@ -1,0 +1,8 @@
+{
+  "name": "Content Management System API documentation",
+  "version": "1.0.0",
+  "description": "CMS API Application",
+  "template": {
+    "forceLanguage": "en"
+  }
+}

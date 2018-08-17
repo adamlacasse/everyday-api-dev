@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>CMS Add Product Card</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">CMS by Libris</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/signup.html">Sign up <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Content Management System
+            </span>
+          </div>
+        </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mb-5">
+          <h2 class="display-4">CMS Add Product Card</h2>
+          <p class="font-weight-bold">For adding new product information cards to the site</p>
+            <form id="add-form" name="card-input" action="/card" method="POST">
+                <div class="form-group">
+                  <label for="InputCardImg">Image please use format 'img src='/img/name.jpg' </label>
+                  <input type="text" class="form-control" id="card_img_top" aria-describedby="imageUrl" placeholder="Enter card image" name="card_img_top">
+                  <small id="imgHelp" class="form-text text-muted">At present images need to reside in /public/img</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputCardTitle">Title on Card</label>
+                  <input type="text" class="form-control" id="InputTitle" placeholder="Title" name="card_title">
+                </div>
+
+                <div class="form-group">
+                  <label for="InputCardTitle">TText block within Card</label>
+                  <input type="text" class="form-control" id="InputText" placeholder="Text" name="card_text">
+                </div>
+
+                <div class="form-group">
+                  <label for="InputCardTitle">list item, facts in brief 1</label>
+                  <input type="text" class="form-control" id="InputListG1" placeholder="Title" name="list_group1">
+                </div>
+
+                <div class="form-group">
+                  <label for="InputCardTitle">list item, facts in brief 2 (optional)</label>
+                  <input type="text" class="form-control" id="InputListG2" placeholder="Title" name="list_group2">
+                </div>
+
+                <div class="form-group">
+                  <label for="InputCardTitle">list item, facts in brief 3 (optional)</label>
+                  <input type="text" class="form-control" id="InputListG1" placeholder="Title" name="list_group3">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="submit-card">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
